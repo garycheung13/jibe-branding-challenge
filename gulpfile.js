@@ -9,8 +9,8 @@ gulp.task('serve', ['scss'], function() {
         server: "."
     });
 
-    gulp.watch("scss/main.scss", ['scss']);
-    gulp.watch("css/main.css").on('change', bs.reload);
+    gulp.watch("scss/*/**", ['scss']);
+    gulp.watch(["css/main.css", "index.html"]).on('change', bs.reload);
 });
 
 
