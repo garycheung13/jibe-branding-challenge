@@ -1,3 +1,31 @@
+// basic resets
+* {
+    padding: 0;
+    margin: 0;
+}
+
+// reponsive rem settings
+html {
+    font-size: 14px;
+
+    @media (min-width: 800px) {
+      font-size: 16px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+
+
 body {
     background-color: $background_color;
+    margin-top: 75px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

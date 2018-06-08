@@ -1,0 +1,13 @@
+@mixin body_text($font_size) {
+    font-family: "Open Sans", sans-serif;
+    color: $text_color;
+    font-size: $font_size;
+    font-weight: 400;
+}
+
+@mixin header_text($font_size) {
+    font-family: "Open Sans", sans-serif;
+    color: $text_color;
+    font-size: $font_size;
+    font-weight: 700;
+}
