@@ -4,6 +4,7 @@
     max-width: 200px;
     margin: 10px;
     transition: all 500ms;
+    transition-property: transform, box-shadow;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 5px 5px 10px $shadow_color;
@@ -11,6 +12,7 @@
     &:hover {
         transform: scale(1.1);
         box-shadow: 5px 5px 10px $shadow_color_hover;
+        cursor: pointer;
 
         .card-header {
             background-color: $card_color_hover;
@@ -19,6 +21,11 @@
         .card-pricing__rate, .card-pricing__amount {
             color: $card_color_hover;
         }
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 85%;
+        display: block;
     }
 }
 
@@ -52,4 +59,35 @@
 .card-pricing__rate {
     transition: color 500ms;
     @include body_text(1rem);
+}
+
+// card-graph animations
+#card-basic:hover ~ .graph #plan-users .graph-bar__filled {
+    transform: scaleX(0.05);
+}
+#card-basic:hover ~ .graph #plan-capacity .graph-bar__filled {
+    transform: scaleX(0.05);
+}
+#card-basic:hover ~ .graph #plan-projects .graph-bar__filled {
+    transform: scaleX(0.05);
+}
+
+#card-pro:hover ~ .graph #plan-users .graph-bar__filled {
+    transform: scaleX(0.3);
+}
+#card-pro:hover ~ .graph #plan-capacity .graph-bar__filled {
+    transform: scaleX(0.7);
+}
+#card-pro:hover ~ .graph #plan-projects .graph-bar__filled {
+    transform: scaleX(0.5);
+}
+
+#card-premium:hover ~ .graph #plan-users .graph-bar__filled {
+    transform: scaleX(1);
+}
+#card-premium:hover ~ .graph #plan-capacity .graph-bar__filled {
+    transform: scaleX(1);
+}
+#card-premium:hover ~ .graph #plan-projects .graph-bar__filled {
+    transform: scaleX(1);
 }

@@ -6,6 +6,7 @@
     overflow: hidden;
     box-shadow: 5px 5px 10px $shadow-color;
     padding: 2.5% 5% 2.5% 5%;
+    box-sizing: border-box;
 }
 
 .graph-label {
@@ -24,4 +25,15 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 25px;
+    overflow: hidden;
+}
+
+.graph-bar__filled {
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms;
+    height: inherit;
+    background-color: $card_color;
+    border-radius: 10px;
 }

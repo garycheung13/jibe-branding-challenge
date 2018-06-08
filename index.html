@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <div class="card" id="card-basic">
             <div class="card-header">Basic</div>
             <div class="card-body">
                 <div class="card-pricing">
@@ -21,7 +21,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-pro">
             <div class="card-header">Pro</div>
             <div class="card-body">
                 <div class="card-pricing">
@@ -32,7 +32,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-premium">
             <div class="card-header">Premium</div>
             <div class="card-body">
                 <div class="card-pricing">
@@ -47,17 +47,23 @@
             <div class="graph-label">
                 <span>5 Users</span><span>100 Users</span>
             </div>
-            <div class="graph-bar" id="plan-users"></div>
+            <div class="graph-bar" id="plan-users">
+                <div class="graph-bar__filled"></div>
+            </div>
 
             <div class="graph-label">
                 <span>20 GB</span><span>200 GB</span>
             </div>
-            <div class="graph-bar" id="plan-capacity"></div>
+            <div class="graph-bar" id="plan-capacity">
+                <div class="graph-bar__filled"></div>
+            </div>
 
             <div class="graph-label">
                 <span>1 Project</span><span>50 Projects</span>
             </div>
-            <div class="graph-bar" id="plan-projects"></div>
+            <div class="graph-bar" id="plan-projects">
+                <div class="graph-bar__filled"></div>
+            </div>
 
         </div>
     </div>
