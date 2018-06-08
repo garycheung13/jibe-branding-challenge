@@ -41,14 +41,17 @@
     @include body_text(0.75rem);
     background-color: white;
     line-height: 170%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 15%;
+    padding: 10% 10% 15% 10%;
 }
 
 .card-pricing {
     padding-top: 15%;
     padding-bottom: 15%;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 }
 
 .card-pricing__amount {
