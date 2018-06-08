@@ -5,7 +5,7 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 5px 5px 10px $shadow-color;
-    padding: 2.5% 5% 2.5% 5%;
+    padding: 2.5% 5% 0% 5%;
     box-sizing: border-box;
 
     @media screen and (max-width: 767px) {
@@ -28,7 +28,7 @@
     background-color: $background_color;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     border-radius: 25px;
     overflow: hidden;
 }
