@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var rename = require('gulp-rename');
 var bs = require("browser-sync").create();
 
 gulp.task('serve', ['scss'], function() {
@@ -23,6 +24,7 @@ gulp.task("scss", function () {
         .pipe(autoprefixer({
             browsers: ["last 20 versions"]
         }))
+        .pipe(rename("main.min.css"))
         .pipe(gulp.dest("css/"));
 });
 
