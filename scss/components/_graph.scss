@@ -1,0 +1,27 @@
+.graph {
+    width: 80%;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px $shadow-color;
+    padding: 2.5% 5% 2.5% 5%;
+}
+
+.graph-label {
+    @include body_text(1.0rem);
+
+    span:nth-child(2){
+        float: right;
+    }
+}
+
+.graph-bar {
+    height: 20px;
+    width: 100%;
+    background-color: $background_color;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}

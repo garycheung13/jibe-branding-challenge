@@ -3,16 +3,21 @@
     text-align: center;
     max-width: 200px;
     margin: 10px;
-    transition: transform 500ms;
+    transition: all 500ms;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 5px 5px 10px $shadow-color;
+    box-shadow: 5px 5px 10px $shadow_color;
 
     &:hover {
         transform: scale(1.1);
+        box-shadow: 5px 5px 10px $shadow_color_hover;
 
         .card-header {
             background-color: $card_color_hover;
+        }
+
+        .card-pricing__rate, .card-pricing__amount {
+            color: $card_color_hover;
         }
     }
 }
@@ -28,14 +33,23 @@
 .card-body {
     @include body_text(0.75rem);
     background-color: white;
+    line-height: 170%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 15%;
 }
 
 .card-pricing {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
 .card-pricing__amount {
+    transition: color 500ms;
     @include header_text(2.4rem);
+}
+
+.card-pricing__rate {
+    transition: color 500ms;
+    @include body_text(1rem);
 }

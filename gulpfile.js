@@ -15,7 +15,6 @@ gulp.task('serve', ['scss'], function() {
 
 
 gulp.task("scss", function () {
-    //compile hashed css files
     gulp.src("scss/main.scss")
         .pipe(sass({
             outputStyle: "compressed",
