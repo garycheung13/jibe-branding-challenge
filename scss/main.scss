@@ -1,3 +1,10 @@
-h1 {
-    color: green;
-}
+// abstracts
+@import "abstract/_variables.scss";
+
+// base
+@import "base/_typography.scss";
+@import "base/_grid.scss";
+
+// components
+@import "components/_card.scss";
+@import "components/_bar_graph.scss";
